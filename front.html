@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Balaji Automobiles</title>
+    <link rel="Stylesheet" href="front.css">
+    
+</head>
+<body>
+    <!-- top -->
+    
+    <div class="hero">
+    <nav>
+    <img src="logo-no-background.png" width="10%" height="10%" class="logo">
+    <ul class="list">
+        <li><a href="#">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="#">PRODUCTS</a></li>
+        <li><a href="#">GALLERY</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+    <input type="search" placeholder="search" class="search">
+    </div>
+</nav>
+<div class="photo">
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="engine.jpg" style="width:80%">
+        <img class="mySlides" src="lubricants.jpg" style="width:80%">
+        <img class="mySlides" src="rubber.jpg" style="width:80%">
+        <img class="mySlides" src="spring.jpg" style="width:80%">
+    </div>
+</div>
+  
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+  
+
+
+</body>
+</html>
